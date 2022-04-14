@@ -9,7 +9,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: rgb(145, 140, 140);
+
   }
   
   .item {
@@ -21,17 +22,19 @@
   p {
     font-size: 25px;
     color: #ffbf47;
+    font-weight: bold;
   }
   .item h3 {
     margin: 0.7rem 0;
   }
   
   .item .image img {
-    width: 100%;
+    width: 70%;
+    border-radius: 30px;
   }
   
   .item .image {
-    width: 250px;
+    width: 200px;
   }
   
   .item-modal-form button,

@@ -56,7 +56,7 @@ console.log("submit clicked",e);
        
         <form className={styles["item-modal-form"]} onSubmit={()=>handledata({pet,age,gender,size})} >
         <div>
-      <label>
+      <label className={styles["label"]}>
         Pet Type:
         <select value={pet} onChange={handlePetChange}>
           <option value="Dog">Dog</option>
@@ -67,7 +67,7 @@ console.log("submit clicked",e);
     </div>
 
     <div>
-      <label>
+      <label className={styles["label"]}>
         Age:
         <select value={age} onChange={handleAgeChange}>
           <option value="Young">Young</option>
@@ -77,7 +77,7 @@ console.log("submit clicked",e);
       </label>
     </div>
     <div>
-      <label>
+      <label className={styles["label"]}>
         Gender:
         <select value={gender} onChange={handleGenderChange}>
           <option value="Male">Male</option>
@@ -88,7 +88,7 @@ console.log("submit clicked",e);
     </div>
 
     <div>
-      <label>
+      <label className={styles["label"]}>
         Size:
         <select value={size} onChange={handleSizeChange}  >
           <option value="Small">Small</option>

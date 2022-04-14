@@ -13,13 +13,12 @@ const [isLoading, setIsLoading] = useState(false);
 const [httpError, setHttpError] = useState(null);
 const [modalIsActive, setModal] = useState(false);
 
-const limit=10;
+const limit=13;
 const type=props.data.pet;
 const age=props.data.age;
 const size=props.data.gender;
 const gender=props.data.size;
   
-
     const EventHandler = () => {
      setModal(true);
     };
@@ -86,9 +85,9 @@ const gender=props.data.size;
         />
       ));
   
-      function check(age) {
-       if(age.url!=null)
-        return age.url;
+      function check(filter) {
+       if(filter.url!=null && filter.url!=undefined && filter.url!="" )
+        return filter.url;
       }
     return (  <>
         <section className={styles["items-section"]} onClick={EventHandler}>
